@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Brand">
+        <item> Nike </item>
+        <item>Adidas</item>
+    </string-array>
+
+    <string-array name="array_technology">
+        <item>Airforce 97</item>
+        <item>Airmax 1</item>
+        <item>Airmax 95</item>
+        <item></item>
+    </string-array>
+</resources>
