@@ -12,7 +12,7 @@
         android:theme="@style/Theme.HelloAndroid"
         tools:targetApi="31">
         <activity
-            android:name=".MainFrag"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".ListActivity"
@@ -27,7 +27,7 @@
             android:name=".SecondActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainFrag"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

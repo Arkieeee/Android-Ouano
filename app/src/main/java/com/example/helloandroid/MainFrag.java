@@ -7,7 +7,7 @@ import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import androidx.fragment.
+
 public class MainFrag extends AppCompatActivity {
     Button firstFragment, secondFragment;
     @Override
@@ -19,10 +19,31 @@ public class MainFrag extends AppCompatActivity {
         secondFragment = (Button) findViewById(R.id.button4);
 
 
-
-        firstFragment.setOnClickListener((new View.OnClickListener(){
+        firstFragment.setOnClickListener((new View.OnClickListener() {
             @Override
-            public void onClick(View v)
+            public void onClick(View v) {
+                loadFragment(new FragmentA());
+            }
+
+        }));
+
+         secondFragment.setOnClickListener((new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            loadFragment(new FragmentB());
         }
+
+    }));
+}
+        private void loadFragment(Fragment fragment)
+        {
+            FragmentManager fm = getFragmentManager();
+            FragmentTransaction fragmentTransaction = fm.beginTransaction();
+
+            fragmentTransaction.replace(R.id.framelayout, fragment);
+            fragmentTransaction.commit();
+
     }
+
+
 }
