@@ -56,8 +56,8 @@ public class ActionBar extends AppCompatActivity {
     private void showAlertDialog() {
         // Implement your alert dialog here
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Alert!")
-                .setMessage("Danger you are falling");
+        builder.setTitle("Sheesh!")
+                .setMessage("Plus 10 rizzz  ");
 
 
         builder.setPositiveButton("I know!", new DialogInterface.OnClickListener() {
